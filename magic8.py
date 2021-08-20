@@ -22,3 +22,15 @@
 # r = random.randint(1,9)
 # fortune = getAnswer(r)
 # print(fortune)
+
+import random
+answers = ['It is certain', 'It is decidedly so', 'Yes', 'Reply hazy, try again', \
+'Ask again later', 'Concentrate and ask again', 'My reply is no', \
+'Outlook is not so good', 'Very doubtful']
+
+while True:
+    game = input('Please enter "8" to shake the magic ball.')
+    if game == '8':
+        response = random.randint(0, 8)
+        print(answers[response])
+        game = ''
