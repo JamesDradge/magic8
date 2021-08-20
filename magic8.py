@@ -31,6 +31,6 @@ answers = ['It is certain', 'It is decidedly so', 'Yes', 'Reply hazy, try again'
 while True:
     game = input('Please enter "8" to shake the magic ball.')
     if game == '8':
-        response = random.randint(0, len(answers))
+        response = random.randint(0, len(answers) -1)
         print(answers[response])
         game = ''
